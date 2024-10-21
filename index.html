@@ -11,10 +11,10 @@
 <body>
     <div class="container">
         <div class="left-section">
-            <img src="scooby.webp" alt="Illustration" class="imggg">
+            <img src="img/scooby.webp" class="imggg">
         </div>
         <div class="right-section">
-            <form action="#">
+            <form action="#" id="login-form">
                 <h2>Bem-vindo de volta</h2>
                 <h3>Faça login na sua conta</h3>
                 <div class="input-group">
@@ -24,6 +24,7 @@
                 <div class="input-group">
                     <label for="senha">Senha</label>
                     <input type="password" id="senha" placeholder="0123456789">
+                    <p id="senha-error" class="error-message"></p>
                 </div>
                 <div class="options">
                     <label>
@@ -33,12 +34,16 @@
                 </div>
                 <button type="submit" class="login-btn">Entrar na conta</button>
                 <button type="button" class="google-login-btn">
-                    <img src="googleicon.png" alt="Google Icon">
+                    <img src="img/googleicon.png" alt="Google Icon">
                     Ou faça login com o Google
                 </button>
             </form>
+
+            
             <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script type="module" src="app.js"></script>
 </body>
 </html>
